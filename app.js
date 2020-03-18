@@ -47,8 +47,10 @@ app.post("/", function(req, res) {
 });
 
 app.get("/work", function(req, res) {
+
+  const day = date.getDate();
   res.render("list", {
-    listTitle: "Work List",
+    listTitle: day,
     newListItems: workItems
   });
 });
