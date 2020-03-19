@@ -18,7 +18,7 @@ app.use(bodyParser.urlencoded({
 // use folder public for css, js etc through express
 app.use(express.static("public"));
 //Mongoose connect to server with req additions
-mongoose.connect("mongodb://localhost:27017/todolistDB", {
+mongoose.connect("mongodb+srv://admin-rato:rato1208@cluster0-mgd0x.mongodb.net/test?retryWrites=true&w=majority/todolistDB", {
   useUnifiedTopology: true,
   useNewUrlParser: true,
   useCreateIndex: true
