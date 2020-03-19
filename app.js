@@ -134,6 +134,7 @@ app.post("/", function(req, res) {
 
 });
 
+<<<<<<< HEAD
 app.post("/delete", function(req, res){
  const checkedItemId = req.body.checkbox;
  const listName = req.body.listName;
@@ -155,6 +156,15 @@ app.post("/delete", function(req, res){
  }
 
 
+=======
+app.get("/work", function(req, res) {
+
+  const day = date.getDate();
+  res.render("list", {
+    listTitle: day,
+    newListItems: workItems
+  });
+>>>>>>> master
 });
 
 
